@@ -4,7 +4,7 @@ Image-noise-reduction은 CNN 신경망을 사용해서 이미지 품질을 개�
 
 - **ResNet**: 출처는 [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) (CVPR 2015)와 [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027) (CVPR 2016) 선택 옵션으로 ImageNet에서 사전 훈련된 가중치를 load 한다.
 
-![34-layer ResNet with Skip / Shortcut Connection (Top), 34-layer Plain Network (Middle), 19-layer VGG-19 (Bottom)](./pics/xxx.png)
+![34-layer ResNet with Skip / Shortcut Connection (Top), 34-layer Plain Network (Middle), 19-layer VGG-19 (Bottom)](./pics/resnet.png)
 
 1. V1
 
@@ -40,7 +40,6 @@ tf.keras.applications.ResNet101V2(
 
 ![The U-Net network structure of contour detection model A.](./pics/unetr.gif)
 
-===
 
 # Installation
 
@@ -52,7 +51,6 @@ python learn.py
 
 이고 `config.py`에서 이미지 사이즈, 배치 사이즈, Epoch등을 수정하여 사용할 수 있다. 모델 결과를 추론하기 위하여 `predict.py` 에서 추론결과와 RMSE, PSNR 값을 계산하는 메서드를 정의한 후 `estimate.ipynb` 을 ipython 등에서 실행하여 훈련한 모델을 적용할 수 있다.
 
-===
 
 예시로 훈련했을때는,
 
