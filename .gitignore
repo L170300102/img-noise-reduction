@@ -1,0 +1,5 @@
+data/
+models/
+모델학습시간.txt
+.ipynb_checkpoints/
+__pycache__/
